@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css"/>
+		<style>
+			.menu-title
+			{float:left;width: 100px;font:35px "microsoft yahei";}
+			.top-center-menu
+			{margin: 0px auto;width:1140px;}
+			.title-box
+			{margin:40px auto;width: 1100px;color: #333333;font:60px "微软雅黑";}
+			.show-box
+			{margin: 0px auto;width: 1100px;height:750px;}
+        	.page-box
+			{margin: 0px auto;width:330px;height:100px;margin-bottom: 100px;}
+			.down-box
+			{width: 100%;height:60px;margin-top:50px;background-color:#009688;color: white;text-align: center;font-size:large;line-height: 60px;}
+		</style>
+	</head>
+	<body>
+		<!--导航开始-->
+		<div class="layui-bg-green">
+			<div class="top-center-menu">
+      				<ul class="layui-nav layui-bg-green">
+  						<li class="menu-title"><b>LittleWitch</b></li>
+  						<li class="layui-nav-item"><a href="index.html">首页</a></li>
+  						<li class="layui-nav-item"><a href="picture.html">图片</a></li>
+  						<li class="layui-nav-item  layui-this">
+    					<a href="javascript:;">语录</a>
+    						<dl class="layui-nav-child">
+      						<dd><a href="text.html">经典</a></dd>
+      						<dd><a href="text1.html">哲理</a></dd>
+      						<dd><a href="">美好</a></dd>
+    						</dl>
+ 					 	</li>
+  						<li class="layui-nav-item"><a href="community.html">社区</a></li>
+  						<li style="float: right;margin-top:3px;">
+  							<audio src="music/1945.mp3" controls="controls">
+								Your browser does not support the audio element.
+							</audio>
+  						</li>
+					</ul>
+			</div>
+		</div>
+		<!--导航结束-->
+		<!--标题开始-->
+		<div class="title-box">
+			哪些经典语录，会让你为之心颤
+			<hr class="layui-bg-gray">
+		</div>
+		<!--标题结束-->
+		<!--展示区开始-->
+		<div class="show-box">
+			<blockquote class="layui-elem-quote ">
+			  我们虽然没有在写给对方的信中发泄对这些日常生活的不满与牢骚，但是知道在这个世界之中有另外一个人能够理解自己，使我们都变得坚强起来。
+			 <br>——秒速5厘米
+			</blockquote>
+			<blockquote class="layui-elem-quote layui-quote-nm">
+			 于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…
+			  <br>——张爱玲
+			</blockquote>
+			<blockquote class="layui-elem-quote ">
+			  Life is either a daring adventure or nothing.
+			  <br>——Helen Keller
+			</blockquote>
+			<blockquote class="layui-elem-quote layui-quote-nm">
+			  我到现在都想不起自己的名字。可是真是不可思议，我居然还记得你的名字。
+			  <br>——侧耳倾听 
+			</blockquote>
+			<blockquote class="layui-elem-quote ">
+			 那天，彗星划过天际的那一天，那就像，就像梦幻的景色一般，那真是无与伦比，美到极致的风景。
+			  <br>—— 你的名字 
+			</blockquote>
+			<blockquote class="layui-elem-quote layui-quote-nm">
+			 在梦中，我以为人生很漫长，会远得连尽头也看不见，没想到我匆匆翻看，人生，却再也无法逆转。在当下，我以为时间很重，会重得连时针都走不动。没想到我轻轻一吹，时间，却再也没回来过。
+			  <br>——言叶之庭 
+			</blockquote>	
+			<blockquote class="layui-elem-quote ">
+			  不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。
+			  <br>—— 千与千寻 
+			</blockquote>
+			<blockquote class="layui-elem-quote layui-quote-nm">
+			  猿强，则国强。国强，则猿更强！ 
+			  <br>——程序猿
+			</blockquote>
+		</div>
+		<!--展示区结束-->
+		<!--分页开始-->
+		<div class="page-box">
+			<div id="page"></div>
+		</div>
+		<!--分页结束-->
+		<!--底部版权区开始-->
+		<div class="down-box">
+			Copyright 2019 ZhouDan All rights Reserved.
+		</div>
+		<!--底部版权区结束-->
+		<script src="layui/layui.js"></script>
+		<script>
+		layui.use('element', function(){
+		  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+		  
+		  //监听导航点击
+		  element.on('nav(demo)', function(elem){
+		    //console.log(elem)
+		    layer.msg(elem.text());
+		  });
+		});
+		</script>
+		<script>
+		layui.use(['laypage', 'layer'], function(){
+		  var laypage = layui.laypage
+		  ,layer = layui.layer;
+		  
+		  //总页数低于页码总数
+		  laypage.render({
+		    elem: 'page'
+		    ,count: 50 //数据总数
+		  });
+		})
+		</script>
+		</body>
+</html>

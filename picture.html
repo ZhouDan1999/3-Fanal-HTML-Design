@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css"/>
+		<style>
+			.menu-title
+			{float:left;width: 100px;font:35px "microsoft yahei";}
+			.top-center-menu
+			{margin: 0px auto;width:1140px;}
+			.banner-box
+			{margin:0px auto;width:1100px;}
+			.card-box
+			{margin:0px auto;width:1100px;height:550px}
+			.show-box
+			{width:1100px;margin: 0 auto;height:550px;background-color:#FFFFFF ;}
+			.show-box p
+			{font:30px "微软雅黑"}
+			.show-box p font
+			{font:16px "楷体"}
+			.show-img-box
+			{width:1100px;height:450px;margin: 0px auto;}
+			.show-img-up
+			{width:1100px;height:210px;}
+			.show-img-down
+			{width:1100px;height: 210px;margin-top: 30px;}
+			.show-img-in
+			{height: 210px;width: 210px;float: left;margin-left:65px;box-shadow: 2px 2px 5px gray;}
+			.show-img-left
+			{height:230px;width:230px;float: left;box-shadow: 2px 2px 5px gray;}
+			.show-img-box img
+			{width:230px;height:230px;}
+			.down-box
+			{width: 100%;height:60px;margin-top:50px;background-color:#009688;color: white;text-align: center;font-size:large;line-height: 60px;}
+		</style>
+	</head>
+	<body>
+		<!--导航开始-->
+		<div class="layui-bg-green">
+			<div class="top-center-menu">
+      				<ul class="layui-nav layui-bg-green">
+  						<li class="menu-title"><b>LittleWitch</b></li>
+  						<li class="layui-nav-item"><a href="index.html">首页</a></li>
+  						<li class="layui-nav-item layui-this"><a href="picture.html">图片</a></li>
+  						<li class="layui-nav-item">
+    					<a href="javascript:;">语录</a>
+    						<dl class="layui-nav-child">
+      						<dd><a href="text.html">经典</a></dd>
+      						<dd><a href="text1.html">哲理</a></dd>
+      						<dd><a href="">美好</a></dd>
+    						</dl>
+ 					 	</li>
+  						<li class="layui-nav-item"><a href="community.html">社区</a></li>
+  						<li style="float: right;margin-top:3px;">
+  							<audio src="music/1945.mp3" controls="controls">
+								Your browser does not support the audio element.
+							</audio>
+  						</li>
+					</ul>
+			</div>
+		</div>
+		<!--导航结束-->
+		<!--banner开始-->
+		<div class="banner-box">
+			<img src="img/bg1.jpg" width="1100px"/>
+		</div>
+		<!--banner结束-->
+		<!--选项卡开始-->
+		<div class="card-box">
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+			  <legend>图片分类</legend>
+			</fieldset>
+			 
+			<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+			  <ul class="layui-tab-title">
+			    <li class="layui-this">魔女宅急便</li>
+			    <li>樱桃小丸子</li>
+			    <li>蜡笔小新</li>
+			    <li>夏目友人帐</li>
+			  </ul>
+			  <div class="layui-tab-content" style="height: 100px;">
+			    <div class="layui-tab-item layui-show">
+					<div class="show-box" id="monv">
+						<div class="show-img-box">
+							<div class="show-img-up">
+								<div class="show-img-left"><img src="img/IMG_1568.JPG" /></div>
+								<div class="show-img-in"><img src="img/IMG_1566.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1567.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1569.JPG"/></div>
+							</div>
+							<div class="show-img-down">
+								<div class="show-img-left"><img src="img/IMG_1570.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1571.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1572.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1573.JPG"/></div>
+							</div>
+						</div>
+						
+					</div>
+			    </div>
+			    <div class="layui-tab-item">
+					<div class="show-box" id="monv">
+						<div class="show-img-box">
+							<div class="show-img-up">
+								<div class="show-img-left"><img src="img/IMG_1584.JPG" /></div>
+								<div class="show-img-in"><img src="img/IMG_1576.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1577.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1578.JPG"/></div>
+							</div>
+							<div class="show-img-down">
+								<div class="show-img-left"><img src="img/IMG_1579.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1580.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1581.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1582.JPG"/></div>
+							</div>
+						</div>
+						
+					</div>
+			    </div>
+			    <div class="layui-tab-item">
+					<div class="show-box" id="monv">
+						<div class="show-img-box">
+							<div class="show-img-up">
+								<div class="show-img-left"><img src="img/IMG_1591.JPG" /></div>
+								<div class="show-img-in"><img src="img/IMG_1592.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1585.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1586.JPG"/></div>
+							</div>
+							<div class="show-img-down">
+								<div class="show-img-left"><img src="img/IMG_1587.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1588.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1589.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1590.JPG"/></div>
+							</div>
+						</div>
+						
+					</div>
+			    </div>
+			    <div class="layui-tab-item">
+					<div class="show-box" id="monv">
+						<div class="show-img-box">
+							<div class="show-img-up">
+								<div class="show-img-left"><img src="img/IMG_1608.JPG" /></div>
+								<div class="show-img-in"><img src="img/IMG_1609.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1610.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1603.JPG"/></div>
+							</div>
+							<div class="show-img-down">
+								<div class="show-img-left"><img src="img/IMG_1604.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1605.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1606.JPG"/></div>
+								<div class="show-img-in"><img src="img/IMG_1607.JPG"/></div>
+							</div>
+						</div>
+						
+					</div>
+			    </div>			    	
+			  </div>
+			</div> 
+		</div>
+		<!--选项卡结束-->
+		<!--底部版权区开始-->
+		<div class="down-box">
+			Copyright 2019 ZhouDan All rights Reserved.
+		</div>
+		<!--底部版权区结束-->
+		<script src="layui/layui.js"></script>
+		<script>
+		layui.use('element', function(){
+		  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+		  
+		  //监听导航点击
+		  element.on('nav(demo)', function(elem){
+		    //console.log(elem)
+		    layer.msg(elem.text());
+		  });
+		});
+		</script>
+
+	</body>
+</html>
